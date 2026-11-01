@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I'm Bored - HTML</title>
-  <style>
+    <style>
         body {
             background-image: url('tapeta.jpg');
             background-size: cover;       /* rozciąga tapetę na cały ekran */
@@ -12,6 +12,35 @@
             background-position: center;  /* centruje obraz */
             background-attachment: fixed; /* tapeta nie rusza się podczas przewijania */
             color: white;
+            font-family: sans-serif;      /* ładniejsza, czystsza czcionka */
+            padding: 20px;
+        }
+
+        /* Styl dla przycisku Focumon w liście */
+        .focumon-btn {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid white;
+            padding: 5px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .focumon-btn:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* Opcjonalny styl dla linków */
+        a {
+            color: #87ceeb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -27,9 +56,21 @@
               and while i am making this website in the background</p>
             
             <ul>
-                <li>FocusMon is running cause i am focusing right now while making the website</li>
+                <!-- Przycisk przenoszący do Focumon umieszczony w punkcie listy -->
+                <li>
+                    <button class="focumon-btn" onclick="window.location.href='https://focumon.com'">Focumon</button> 
+                    is running cause i am focusing right now while making the website
+                </li>
                 <li>I'm listening to Katseye cause why not and i like katseye</li>
                 <li>I am writing this website on ChromeBook</li>
+            </ul>
+
+            <!-- Nowa sekcja z listą linków -->
+            <h2>Links</h2>
+            <ul>
+                <li><a href="https://focumon.com" target="_blank">Focumon</a></li>
+                <!-- Tutaj możesz dodawać kolejne linki: -->
+                <!-- <li><a href="https://link.com" target="_blank">Nazwa Strony</a></li> -->
             </ul>
 
             <p>I dont know how to finish so it will continue writing</p>
